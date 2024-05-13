@@ -114,7 +114,7 @@ async function bankService(bank: Bank) {
       }
       if (account) {
         let name = myBank.customer.find(
-          (item) => item.accountNo == account.accountNo
+          (item) => item.accountNo == account?.accountNo
         );
         console.log(
           chalk.bold.cyan(`\nDear ${chalk.green.italic(name?.firstName)} ${chalk.green.italic(

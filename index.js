@@ -75,7 +75,7 @@ async function bankService(bank) {
                 console.log(chalk.red.bold("\nInvalid Account No!\n"));
             }
             if (account) {
-                let name = myBank.customer.find((item) => item.accountNo == account.accountNo);
+                let name = myBank.customer.find((item) => item.accountNo == account?.accountNo);
                 console.log(chalk.bold.cyan(`\nDear ${chalk.green.italic(name?.firstName)} ${chalk.green.italic(name?.lastName)} your Account Balance is ${chalk.bold.green(`$${account.balance}`)}\n`));
             }
         }
