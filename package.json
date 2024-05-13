@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "oop-mybank-areeba",
+  "version": "1.0.0",
+  "description": "this is cli based oop-mybank project in typescript",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Areeba Bano",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/inquirer": "^9.0.7",
+    "chalk": "^4.1.2",
+    "inquirer": "^9.2.20"
+  }
+}
